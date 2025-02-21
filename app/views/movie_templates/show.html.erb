@@ -2,9 +2,54 @@
   Movie #<%= @the_movie.id %> details
 </h1>
 
+<div>
 <a href="/movies">
   Go back
 </a>
+</div>
+
+<div>
+  <a href="/delete_movie/<%= @the_movie.id %>">Delete movie</a>
+</div>
+
+
+<form action="/update_movie/<%= @the_movie.id %>" method="post">
+  
+  <div>
+    <label for="title">Title</label>
+    <input type="text" id="title" name="movie_title">
+  </div>
+  
+  <div>
+    <label for="year">Year</label>
+    <input type="text" id="year" name="movie_year">
+  </div>
+  
+  <div>
+    <label for="duration">Duration</label>
+    <input type="text" id="duration" name="movie_duration">
+  </div>
+
+  <div>
+    <label for="description">Description</label>
+    <textarea id="description" name="movie_description" rows="3"></textarea>
+  </div>
+
+  <div>
+    <label for="img">Image</label>
+    <input id="img" name="movie_image">
+  </div>
+
+ <div>
+    <label for="movie_director_ID">Director ID</label>
+    <input id="movie_director_ID" name="movie_director_ID">
+  </div>
+
+  <button>Update movie</button>
+</form>
+
+
+
 
 <hr>
 
