@@ -17,22 +17,22 @@
   
   <div>
     <label for="name">Name</label>
-    <input type="text" id="name" name="director_name">
+    <input type="text" id="name" name="director_name" value="<%= @the_director.name %>">
   </div>
   
   <div>
     <label for="dob">Dob</label>
-    <input type="date" id="dob" name="director_dob">
+    <input type="date" id="dob" name="director_dob" value="<%= @the_director.dob %>">
   </div>
   
   <div>
     <label for="bio">Bio</label>
-    <textarea id="bio" name="director_bio" rows="3"></textarea>
+    <textarea id="bio" name="director_bio" rows="3"><%= @the_director.bio %></textarea>
   </div>
 
   <div>
     <label for="img">Image</label>
-    <input id="img" name="director_img">
+    <input id="img" name="director_img" value="<%= @the_director.image %>">
   </div>
 
   <button>Update Director</button>

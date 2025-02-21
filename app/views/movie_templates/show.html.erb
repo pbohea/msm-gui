@@ -17,32 +17,32 @@
   
   <div>
     <label for="title">Title</label>
-    <input type="text" id="title" name="movie_title">
+    <input type="text" id="title" name="movie_title" value="<%= @the_movie.title %>">
   </div>
   
   <div>
     <label for="year">Year</label>
-    <input type="text" id="year" name="movie_year">
+    <input type="text" id="year" name="movie_year" value="<%= @the_movie.year %>">
   </div>
   
   <div>
     <label for="duration">Duration</label>
-    <input type="text" id="duration" name="movie_duration">
+    <input type="text" id="duration" name="movie_duration" value="<%= @the_movie.duration %>">
   </div>
 
   <div>
     <label for="description">Description</label>
-    <textarea id="description" name="movie_description" rows="3"></textarea>
+    <textarea id="description" name="movie_description" rows="3"><%= @the_movie.description %></textarea>
   </div>
 
   <div>
     <label for="img">Image</label>
-    <input id="img" name="movie_image">
+    <input id="img" name="movie_image" value="<%= @the_movie.image %>">
   </div>
 
  <div>
     <label for="movie_director_ID">Director ID</label>
-    <input id="movie_director_ID" name="movie_director_ID">
+    <input id="movie_director_ID" name="movie_director_ID" value="<%= @the_movie.director_id %>">
   </div>
 
   <button>Update movie</button>
