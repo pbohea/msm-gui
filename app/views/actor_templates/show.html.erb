@@ -11,6 +11,7 @@
   <a href="/delete_actor/<%= @the_actor.id %>">Delete actor</a>
 </div>
 
+<hr>
 
 <form action="/update_actor/<%= @the_actor.id %>" method="post">
   
@@ -20,21 +21,21 @@
   </div>
   
   <div>
-    <label for="dob">Dob</label>
-    <input type="date" id="dob" name="actor_dob" value="<%= @the_actor.dob %>">
+    <label for="actor_dob">Dob</label>
+    <input type="date" id="actor_dob" name="actor_dob" value="<%= @the_actor.dob %>">
   </div>
   
   <div>
-    <label for="bio">Bio</label>
-    <textarea id="bio" name="actor_bio" rows="3"><%= @the_actor.bio %></textarea>
+    <label for="actor_bio">Bio</label>
+    <textarea id="actor_bio" name="actor_bio" rows="3"><%= @the_actor.bio %></textarea>
   </div>
 
   <div>
-    <label for="img">Image</label>
-    <input id="img" name="actor_img" value="<%= @the_actor.image %>">
+    <label for="actor_img">Image</label>
+    <input id="actor_img" name="actor_img" value="<%= @the_actor.image %>">
   </div>
 
-  <button>Update Actor</button>
+  <button>Update actor</button>
 </form>
 
 
