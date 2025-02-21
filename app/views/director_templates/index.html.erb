@@ -2,6 +2,36 @@
   List of all directors
 </h1>
 
+<form action="/insert_director" method="post">
+  
+  <div>
+    <label for="name">Name</label>
+    <input type="text" id="name" name="director_name">
+  </div>
+  
+  <div>
+    <label for="dob">Dob</label>
+    <input type="date" id="dob" name="director_dob">
+  </div>
+  
+  <div>
+    <label for="bio">Bio</label>
+    <textarea id="bio" name="director_bio" rows="3"></textarea>
+  </div>
+
+  <div>
+    <label for="img">Image</label>
+    <input id="img" name="director_img">
+  </div>
+
+  <button>Create Director</button>
+</form>
+
+
+
+
+
+
 <hr>
 
 <table border="1">

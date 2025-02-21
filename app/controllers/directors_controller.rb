@@ -3,6 +3,7 @@ class DirectorsController < ApplicationController
     matching_directors = Director.all
     @list_of_directors = matching_directors.order({ :created_at => :desc })
 
+    
     render({ :template => "director_templates/index" })
   end
 
@@ -36,4 +37,19 @@ class DirectorsController < ApplicationController
 
     render({ :template => "director_templates/eldest" })
   end
+
+  def create
+
+    d = Director.new
+    d.name = params.fetch("director_name")
+    d.bio = params.fetch("director_bio")
+    d.image = params.fetch("director_img")
+    d.dob = params.fetch("director_dob")
+    
+    d.save
+
+    redirect_to("/directors")
+  end
+
+
 end
